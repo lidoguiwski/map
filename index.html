@@ -60,6 +60,20 @@
       tap: false
     });
   </script>
+  <script type="text/javascript">
+    var district_boundary = new L.geoJson();
+    district_boundary.addTo(map);
+
+    $.ajax({
+    dataType: "json",
+    url: "geojson/erie.geojson",
+    success: function(data) {
+        $(data.features).each(function(key, data) {
+            district_boundary.addData(data);
+        });
+    }
+    }).error(function() {});
+  </script>
 
   <script type="text/javascript" src="google-doc-url.js"></script>
   <script type="text/javascript" src="markers/leaflet.extra-markers.min.js"></script>
