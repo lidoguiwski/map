@@ -477,7 +477,7 @@ $(window).on('load', function() {
   /**
    * Changes map attribution (author, GitHub repo, email etc.) in bottom-right
    */
-  /**
+
   function changeAttribution() {
     var attributionHTML = $('.leaflet-control-attribution')[0].innerHTML;
     var credit = 'View <a href="'
@@ -504,4 +504,4 @@ $(window).on('load', function() {
   }
 
 });
-*/
+
