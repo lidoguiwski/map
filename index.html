@@ -73,52 +73,6 @@
         });
     }
     }).error(function() {});
-
-    map.createPane('pane_map1_modified_2');
-        map.getPane('pane_map1_modified_2').style.zIndex = 402;
-        var img_map1_modified_2 = 'media/map1_modified_2.png';
-        var img_bounds_map1_modified_2 = [[42.520230913908414,-79.10890417142518],[43.56160584334783,-73.54029539115261]];
-        var layer_map1_modified_2 = new L.imageOverlay(img_map1_modified_2,
-                                              img_bounds_map1_modified_2,
-                                              {pane: 'pane_map1_modified_2'});
-        bounds_group.addLayer(layer_map1_modified_2);
-        map.addLayer(layer_map1_modified_2);
-        function pop_Dissolved_3(feature, layer) {
-            var popupContent = '<table>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['FID'] !== null ? autolinker.link(feature.properties['FID'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['OPENED'] !== null ? autolinker.link(feature.properties['OPENED'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['CLOSED'] !== null ? autolinker.link(feature.properties['CLOSED'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['NAME'] !== null ? autolinker.link(feature.properties['NAME'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['REFERENCE'] !== null ? autolinker.link(feature.properties['REFERENCE'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['LENGHT'] !== null ? autolinker.link(feature.properties['LENGHT'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['VxCount'] !== null ? autolinker.link(feature.properties['VxCount'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Type'] !== null ? autolinker.link(feature.properties['Type'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Shape__Len'] !== null ? autolinker.link(feature.properties['Shape__Len'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                </table>';
-            var content = removeEmptyRowsFromPopupContent(popupContent, feature);
-			layer.on('popupopen', function(e) {
-				addClassToPopupIfMedia(content, e.popup);
-			});
-			layer.bindPopup(content, { maxHeight: 400 });
-        }
   </script>
 
   <script type="text/javascript" src="google-doc-url.js"></script>
