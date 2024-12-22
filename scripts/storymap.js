@@ -412,7 +412,7 @@ $(window).on('load', function() {
         color: " + trySetting('_narrativeText', 'black') + "; \
       }\
        #contents { \
-      width: 350px; /* or 30%, etc. */ \
+      width: 500px; /* or 40%, etc. */ \
       }\
       a, a:visited, a:hover {\
         color: " + trySetting('_narrativeLink', 'blue') + " \
