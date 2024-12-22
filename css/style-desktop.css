@@ -16,8 +16,8 @@
   }
 
   #title {
-    width: 60vw;
-    max-width: 500px;
+    width: 100%;
+    max-width: 100%;
     top: 0;
   }
 
