@@ -2,4 +2,4 @@
 var googleDocURL = 'https://docs.google.com/spreadsheets/d/1OLBH8Eyc5vn5Q3zEfZNwbUaaYicntZBkLDcMb7-5rUA/edit?gid=0#gid=0';
 
 // insert your own Google Sheets API key from https://console.developers.google.com
-var googleApiKey = 'AIzaSyAtJarj0kmrj8KxD8kHrTjwhsEMiCTwJ94';
+var googleApiKey = 'AIzaSyD4Cc5X4VM53zCXb-tOkKnPwTsX0Oo8UT4';
