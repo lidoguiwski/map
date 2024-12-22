@@ -411,6 +411,9 @@ $(window).on('load', function() {
         background-color: " + trySetting('_narrativeBackground', 'white') + "; \
         color: " + trySetting('_narrativeText', 'black') + "; \
       }\
+       #contents { \
+      width: 350px; /* or 30%, etc. */ \
+      }\
       a, a:visited, a:hover {\
         color: " + trySetting('_narrativeLink', 'blue') + " \
       }\
