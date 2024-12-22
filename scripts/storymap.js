@@ -98,7 +98,7 @@ $(window).on('load', function() {
   function initMap(options, chapters) {
     createDocumentSettings(options);
 
-    var chapterContainerMargin = 90;
+    var chapterContainerMargin = 70;
 
     document.title = getSetting('_mapTitle');
     $('#header').append('<h1>' + (getSetting('_mapTitle') || '') + '</h1>');
@@ -410,9 +410,6 @@ $(window).on('load', function() {
       #narration, #title {\
         background-color: " + trySetting('_narrativeBackground', 'white') + "; \
         color: " + trySetting('_narrativeText', 'black') + "; \
-      }\
-       #contents { \
-      width: 500px; /* or 40%, etc. */ \
       }\
       a, a:visited, a:hover {\
         color: " + trySetting('_narrativeLink', 'blue') + " \
